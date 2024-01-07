@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  height: 100%;
+}
+body {
+  scrollbar-color: #00acc1;
+  background-color: #1d1e20;
+  min-height: 100%;
+}
+.scrollbar-custom {
+  @apply !absolute !bottom-44  !mx-auto hidden !h-[2px] !bg-gray-800/20 md:block;
+}
+.absolute-middle {
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+.scrollbar-custom--drag {
+  @apply h-full !bg-slate-500/70;
+}
+.active {
+  @apply bg-primary text-gray-900;
+}
